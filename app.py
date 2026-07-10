@@ -18,7 +18,7 @@ with st.sidebar:
     st.header("⚙️ ตั้งค่า")
     model_path = st.text_input(
         "Path ของโมเดล (.pt)",
-        value="runs/detect/train/weights/best.pt",
+        value="best.pt",
         help="ไฟล์ weights ที่ได้จากการเทรน เช่น best.pt (จากโฟลเดอร์ runs ที่ copy ไว้ใน Drive)",
     )
     conf_threshold = st.slider("Confidence threshold", 0.0, 1.0, 0.25, 0.05)
